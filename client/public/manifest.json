@@ -1,0 +1,17 @@
+{
+  "name": "Soug Express — تحميل التطبيق",
+  "short_name": "Soug Express",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#FFF9EE",
+  "theme_color": "#081A33",
+  "icons": [
+    {
+      "src": "./assets/sougxpress-official-logo-user_94f9faa7.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
