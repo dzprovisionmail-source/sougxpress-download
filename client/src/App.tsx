@@ -255,7 +255,7 @@ function App() {
       <footer className="site-footer">
         <div className="container footer-inner">
           <Brand footer />
-          <div className="footer-copy"><span>سوقك يوصلك لبابك.</span><small>Soug-XPRESS v{APP_VERSION} · Android</small></div>
+          <div className="footer-copy"><span>سوقك يوصلك لبابك.</span><small>Soug-XPRESS v{APP_VERSION} · Android</small><small>المطور: بن سالم محمد علي</small></div>
           <div className="footer-location"><MapPin size={15} /> عين الصفراء · الجزائر</div>
         </div>
       </footer>
