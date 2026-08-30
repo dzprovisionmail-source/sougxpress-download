@@ -57,10 +57,22 @@ const journeySteps = [
 ];
 
 function DownloadButton({ compact = false }: { compact?: boolean }) {
+  const [isOpening, setIsOpening] = useState(false);
+
+  const handleDownloadStart = () => {
+    setIsOpening(true);
+    window.setTimeout(() => setIsOpening(false), 1200);
+  };
+
   return (
-    <a className={compact ? "button button-primary button-compact" : "button button-primary"} href={APK_URL} download target="_blank" rel="noreferrer">
+    <a
+      className={compact ? "button button-primary button-compact" : "button button-primary"}
+      href={APK_URL}
+      onClick={handleDownloadStart}
+      aria-label={isOpening ? "جارٍ فتح تنزيل التطبيق في المتصفح" : "تحميل تطبيق Soug-XPRESS"}
+    >
       <ArrowDownToLine size={18} strokeWidth={2.4} />
-      <span>{compact ? "تحميل APK" : "تحميل التطبيق"}</span>
+      <span>{isOpening ? "جارٍ فتح التنزيل…" : compact ? "تحميل APK" : "تحميل التطبيق"}</span>
     </a>
   );
 }
