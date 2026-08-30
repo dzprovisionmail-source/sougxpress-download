@@ -23,7 +23,7 @@ import {
   X,
 } from "lucide-react";
 
-const APK_URL = "https://github.com/dzprovisionmail-source/sougxpress-download/releases/download/v1.0.0/soug-xpress.apk";
+const APK_URL = "https://github.com/dzprovisionmail-source/sougxpress-download/releases/download/v1.0.0/soug-xpress-release.apk";
 const APP_VERSION = "1.0.0";
 const OFFICIAL_LOGO = "./assets/sougxpress-official-logo-user_94f9faa7.png";
 const HOME_SCREEN = "./assets/screens/light_theme.png";
