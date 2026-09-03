@@ -14,9 +14,9 @@ import {
   Zap,
 } from "lucide-react";
 
-const APK_URL = "https://github.com/dzprovisionmail-source/sougxpress-download/releases/download/v1.0.5/Soug-XPRESS-Beta-1.0.5.apk";
-const APP_VERSION = "1.0.5";
-const APK_SIZE = "حوالي 131 MB";
+const APK_URL = "https://github.com/dzprovisionmail-source/sougxpress-download/releases/download/v1.1.0-beta/Soug-XPRESS-Beta-1.1.0.apk";
+const APP_VERSION = "1.1.0 Beta";
+const APK_SIZE = "حوالي 130.5 MB";
 const BASE_URL = import.meta.env.BASE_URL;
 
 const asset = (name: string) => `${BASE_URL}assets/official/${name}`;
