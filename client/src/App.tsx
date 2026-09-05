@@ -15,8 +15,10 @@ import {
 } from "lucide-react";
 
 const APK_URL = "https://github.com/dzprovisionmail-source/sougxpress-download/releases/download/v1.1.0-beta/Soug-XPRESS-Beta-1.1.0.apk";
+const APK_BUILD_ID = "31f22ab4-4b0e-401c-b9d8-ce133dff5ea2";
+const APK_SHA256 = "0e649d8590503a1047c31d5de2c6202493c4b84d78fae6bba22a6726ff3082ed";
 const APP_VERSION = "1.1.0 Beta";
-const APK_SIZE = "حوالي 130.5 MB";
+const APK_SIZE = "حوالي 130.6 MB";
 const BASE_URL = import.meta.env.BASE_URL;
 
 const asset = (name: string) => `${BASE_URL}assets/official/${name}`;
@@ -87,6 +89,8 @@ function DownloadButton({ compact = false }: { compact?: boolean }) {
     <a
       className={`download-button ${compact ? "download-button-compact" : ""}`}
       href={APK_URL}
+      data-build-id={APK_BUILD_ID}
+      data-sha256={APK_SHA256}
       onClick={handleDownloadStart}
       aria-label={isOpening ? "جارٍ فتح تنزيل التطبيق" : "تحميل تطبيق Soug-XPRESS"}
     >
