@@ -14,11 +14,13 @@ import {
   Zap,
 } from "lucide-react";
 
-const APK_URL = "https://github.com/dzprovisionmail-source/sougxpress-download/releases/download/v1.1.5-beta/Soug-XPRESS-Beta-1.1.5.apk";
-const APK_BUILD_ID = "f754151a-0ddd-4f4b-84bb-b1a7c0a2a006";
-const APK_SHA256 = "07a9fa6a4c4e5784d77568aa34fe90ac1628d70bd043750ed705b554aa82730";
-const APP_VERSION = "1.1.5 Beta";
-const APK_SIZE = "حوالي 119.6 MiB";
+const APK_URL = "https://expo.dev/artifacts/eas/D3Tie4a9uTX06PO4P7BTpgBgqCHtbzVxM5ypPreffs0.apk";
+const APK_BUILD_ID = "8a41966e-a959-47fe-a7cc-5eb757bd5a33";
+const APK_SHA256 = "7079de468818a47dc82f59fd5e79e7679e8031a45e2cc94b775226b813739b2b";
+const APP_VERSION = "1.2.0 Beta";
+const APK_SIZE = "حوالي 119.1 MiB";
+const RELEASE_DATE = "14 سبتمبر 2026";
+const RELEASE_NOTES = "إشعارات Firebase وFCM V1 وBadge محسّنة، مزامنة لحظية للعدد غير المقروء، وقنوات Android وأيقونة التطبيق وشاشة اختيار الدور بأيقونات Vector محدثة.";
 const BASE_URL = import.meta.env.BASE_URL;
 
 const asset = (name: string) => `${BASE_URL}assets/official/${name}`;
@@ -180,7 +182,7 @@ function App() {
               <div className="download-details">
                 <span className="section-kicker">النسخة الرسمية المتاحة الآن</span>
                 <h2>حمّل Soug-XPRESS وابدأ.</h2>
-                <p>كل ما تحتاجه من السوق المحلي، في تطبيق واحد.</p>
+                <p>{RELEASE_DATE} — {RELEASE_NOTES}</p>
                 <div className="download-meta" aria-label="تفاصيل التطبيق">
                   <span><b>Android</b></span>
                   <span>v{APP_VERSION}</span>
